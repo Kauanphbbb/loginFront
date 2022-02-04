@@ -1,2 +1,2 @@
 # loginFront
-Front do app de login feito com Vue e TS
+Front do app de login feito com React e TS
