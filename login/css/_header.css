@@ -1,0 +1,15 @@
+header {
+    display: flex;
+}
+header .navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .navbar ul li a img {
+    width: 100px;
+    height: 100px;
+    transform: scale(1.5);
+    display: flex;
+    align-self: center;
+}
