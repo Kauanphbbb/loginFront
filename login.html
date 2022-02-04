@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login/css/_global.css"> <!--Global style component-->
+    <link rel="stylesheet" href="login/css/_header.css"> <!--Header style component-->
+    <link rel="stylesheet" href="login/css/_main.css"> <!--Body style component-->
+    <link rel="stylesheet" href="login/css/_form.css"> <!--Elment component from _main.css-->
+    <script src="login/js/svg-inject.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <!--Component Header-->
+    <header>
+        <nav class="navbar">
+            <ul class="ml-4 mt-2">
+                <li><a href="#"><img src="login/img/logo.png" alt="Logo Login" ></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Component main left-->
+        <section class="left__component">
+            <img
+                src="login/img/main_element.svg"
+                alt="Component to Main"  
+                onload="SVGInject(this)"
+                class="left__component__img"
+            >
+        </section>
+
+        <section class="right__component"> <!--Component Main right-->
+           
+            <div class="right__component__options__login"> 
+                
+                <div class="options__login--enter">
+                    <a href="#"><span>Entrar</span></a>
+                </div>
+                
+                <div class="options__login--create">
+                    <a href="#"><span>Criar Conta</span></a>
+                </div>
+
+                <hr class="line__component">
+            </div>
+
+            <div class="right__component__options__social">
+                <nav>
+                    <ul>
+                        <li><a href=""><img src="login/img/Facebook - iconicosn.png" alt></a></li>
+                        <li><a href=""><img src="login/img/Google - iconicosn.png" alt></a></li>
+                        <li><a href=""><img src="login/img/Twitter - iconicosn.png" alt></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right__component__label">
+                <p>Entrar com email</p>
+                <hr class="line__component">
+            </div>
+
+
+            <div class="right__component__form"> <!--Component Form Main -->
+                <form>
+                    <label for="femail">Email</label><br>
+                    <input type="email" id="femail" name="femail"><br>
+                    <label for="pass">Senha</label><br>
+                    <input type="password" id="fpass" name="fpass">
+
+                    <span class="element--form"><a href="">Esqueceu sua senha ?</a></span>
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+
+            <div class="right__component__options__captcha--fake">
+                <p>Este site é protegido por reCAPTCHA e a Política de Privacidade e os Termos de Serviço do Google são aplicáveis.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer> <!--Footer Component Main-->
+        <div class="footer__component">
+            <p>Copyright © 2022. - Projeto de Estudo e Educação S.A. – <a href=""><span class="bars--green">Msamuelsons</span></a>-front-end</p>
+            <p><a href=""><span class="bars--green">Kauanphbbb</span></a> - back-end</p>
+        </div>
+    </footer>
+</body>
+</html>
