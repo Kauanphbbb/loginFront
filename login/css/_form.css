@@ -1,0 +1,107 @@
+.right__component {
+    padding: var(--m-gap-2);
+    margin-right: 10%;
+    position: relative;
+    top: -10%;
+}
+.right__component__options__login {
+    display: flex;
+    justify-content: space-around;
+}
+.options__login--enter a{
+    color: var(--color-black);
+    font-weight: 700;
+    
+}
+.options__login--create {
+    display: flex;
+    align-self: center;
+}
+.options__login--create a{
+    color: var(--color-grey-three);
+    font-weight: 700;
+
+}
+.line__component {
+    display: block;
+    width: 100%;
+    height: .08px;
+    background: var(--color-grey-four);
+    margin: 0 auto;
+    margin-top: 6px;
+    position: relative;
+}
+
+.line__component::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    background: var(--color-green);
+    margin: 0 auto;
+    bottom: 0;
+    margin-top: 8px;
+    position: absolute;
+}
+
+/* icon style */
+.right__component__options__social nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--m-gap-3);
+}
+.right__component__options__social nav ul li {
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.right__component__options__social nav ul li:nth-child(1){
+    background: var(--color-social-facebook);
+}
+
+.right__component__options__social nav ul li:nth-child(2){
+    background: var(--color-social-google);
+}
+.right__component__options__social nav ul li:nth-child(3){
+    background: var(--color-social-twitter);
+}
+.right__component__options__social nav ul li a {
+    display: flex;
+    align-self: center;
+}
+.right__component__options__social nav ul li a img {
+    width: 25px;
+    height: 25px;
+    transform: translate(-15px);
+    margin-left: var(--m-gap-3);
+}
+
+
+/* separator */
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: var(--m-gap-2);
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: .8px solid var(--color-grey-four);
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .75em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .75em;
+  }
